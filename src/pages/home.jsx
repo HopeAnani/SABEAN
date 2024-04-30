@@ -46,7 +46,7 @@ const Home = () => {
         <div>
             <h3 className="text-5xl  text-[#0077b6]  text-center">Key Features</h3>
             
-          </div>
+        </div>
         <div className="lg:flex gap-10">
           <div className="text-center shadow-lg p-10 rounded-xl my-10 h-auto border bg-white border-[#0077b6] flex-1 transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
             {/* <img src={drop} className='w-20 mx-auto' /> */}
