@@ -6,9 +6,14 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isProductsMenuOpen, setIsProductsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const toggleProductsMenu = () => {
+    setIsProductsMenuOpen(!isProductsMenuOpen);
   };
 
   return (
@@ -37,9 +42,27 @@ function Navbar() {
         <ul className="md:flex md:space-x-8 md:items-center md:w-auto hidden">
           <li><a href="/" className="flex items-center text-[#0077b6] hover:text-[#14152d]"><AiOutlineHome className="mr-1" /> Home</a></li>
           <li><a href="/about-us" className="flex items-center text-[#0077b6] hover:text-[#14152d]"><AiOutlineInfoCircle className="mr-1" /> About Us</a></li>
-          <li><a href="/products" className="flex items-center text-[#0077b6] hover:text-[#14152d]"><AiOutlineShopping className="mr-1" /> Products</a></li>
+          {/* Products dropdown */}
+          <li className="relative" onClick={toggleProductsMenu}>
+            <a href="#" className="flex items-center text-[#0077b6] hover:text-[#14152d]">
+              <AiOutlineShopping className="mr-1" /> Products
+            </a>
+            <motion.ul 
+              className={`absolute left-0 top-full bg-white shadow-md py-2 px-4 mt-2 w-40 rounded-md ${isProductsMenuOpen ? 'block' : 'hidden'}`}
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3 }}
+            >
+              <li className='my-4 hover:text-[#0077b6]'><a href="/products/category1">Category 1</a></li>
+              <li className='my-4 hover:text-[#0077b6]'><a href="/products/category1">Category 1</a></li>
+              <li className='my-4 hover:text-[#0077b6]'><a href="/products/category1">Category 1</a></li>
+              <li className='my-4 hover:text-[#0077b6]'><a href="/products/category1">Category 1</a></li>
+              <li className='my-4 hover:text-[#0077b6]'><a href="/products/category1">Category 1</a></li>
+              {/* Add more categories as needed */}
+            </motion.ul>
+          </li>
           <li><a href="/services" className="flex items-center text-[#0077b6] hover:text-[#14152d]"><AiOutlineSolution className="mr-1" /> Services</a></li>
-          <li><a href="/contact" className="flex items-center text-[#0077b6] hover:text-[#14152d]"><AiOutlineMail className="mr-1" /> Contact Us</a></li>
+          <li><a href="/contact-us" className="flex items-center text-[#0077b6] hover:text-[#14152d]"><AiOutlineMail className="mr-1" /> Contact Us</a></li>
         </ul>
 
         {/* Responsive menu */}
@@ -51,10 +74,28 @@ function Navbar() {
         >
           <ul className="space-y-4">
             <li><a href="/" className="flex gap-2 items-center text-[#0077b6] hover:text-[#14152d]"><AiOutlineHome className="mr-1" /> Home</a></li>
-            <li><a href="/about" className="flex gap-2 items-center  text-[#0077b6] hover:text-[#14152d]"><AiOutlineInfoCircle className="mr-1" /> About Us</a></li>
-            <li><a href="/products" className="flex gap-2 items-center  text-[#0077b6] hover:text-[#14152d]"><AiOutlineShopping className="mr-1" /> Products</a></li>
+            <li><a href="/about-us" className="flex gap-2 items-center  text-[#0077b6] hover:text-[#14152d]"><AiOutlineInfoCircle className="mr-1" /> About Us</a></li>
+            {/* Responsive Products dropdown */}
+            <li className="relative" onClick={toggleProductsMenu}>
+              <a href="#" className="flex gap-2 items-center text-[#0077b6] hover:text-[#14152d]">
+                <AiOutlineShopping className="mr-1" /> Products
+              </a>
+              <motion.ul 
+                className={`absolute left-0 top-full bg-white shadow-md py-2 px-4 mt-2 w-40 rounded-md ${isProductsMenuOpen ? 'block' : 'hidden'}`}
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3 }}
+              >
+                <li className='my-4 hover:text-[#0077b6]'><a href="/products/category1">Category 1</a></li>
+                <li className='my-4 hover:text-[#0077b6]'><a href="/products/category1">Category 1</a></li>
+                <li className='my-4 hover:text-[#0077b6]'><a href="/products/category1">Category 1</a></li>
+                <li className='my-4 hover:text-[#0077b6]'><a href="/products/category1">Category 1</a></li>
+                <li className='my-4 hover:text-[#0077b6]'><a href="/products/category1">Category 1</a></li>
+                {/* Add more categories as needed */}
+              </motion.ul>
+            </li>
             <li><a href="/services" className="flex gap-2 items-center text-[#0077b6] hover:text-[#14152d]"><AiOutlineSolution className="mr-1" /> Services</a></li>
-            <li><a href="/contact" className="flex gap-2 items-center text-[#0077b6] hover:text-[#14152d]"><AiOutlineMail className="mr-1" /> Contact Us</a></li>
+            <li><a href="/contact-us" className="flex gap-2 items-center text-[#0077b6] hover:text-[#14152d]"><AiOutlineMail className="mr-1" /> Contact Us</a></li>
           </ul>
         </motion.div>
       </div>
