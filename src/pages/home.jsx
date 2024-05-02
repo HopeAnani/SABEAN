@@ -1,10 +1,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import drop from '../images/pngwing.com (5).png';
 import logo from '../images/logo.png'
 import image1 from '../images/Sabean/Sabeanby_AronSimeneh-2124.jpg'
 import image2 from '../images/Sabean/Sabeanby_AronSimeneh-2343.jpg'
-import image3 from '../images/Sabean/Sabeanby_AronSimeneh-2559.jpg'
+import image3 from '../images/Sabean/Sabeanby_AronSimeneh-2946.jpg'
+import image4 from '../images/Sabean/Sabeanby_AronSimeneh-2608.jpg'
+import image5 from '../images/Sabean/Sabeanby_AronSimeneh-2377.jpg'
+import image6 from '../images/Sabean/Sabeanby_AronSimeneh-2377.jpg'
+import image7 from '../images/Sabean/Sabeanby_AronSimeneh-3211.jpg'
+import image8 from '../images/Sabean/Sabeanby_AronSimeneh-3316.jpg'
+import image9 from '../images/Sabean/Sabeanby_AronSimeneh-4053.jpg'
 import {AiOutlineStar,AiOutlineCheckCircle,AiOutlineLineChart} from 'react-icons/ai'
 
 const Home = () => {
@@ -91,7 +98,7 @@ const Home = () => {
       </section> */}
         <section className="font-serif justify-center items-center md:mx-12 mx-4">
             <div>
-                <h3 className="text-5xl text-[#0077b6] text-center">Products</h3>
+                <h3 className="text-5xl text-[#0077b6] text-center">Gallery</h3>
             </div>
             <div className='flex flex-wrap gap-4 md:gap-16 items-center justify-center mb-12'>
                 <div className="relative mt-8 md:w-[30%] w-full">
@@ -102,7 +109,7 @@ const Home = () => {
                     />
                     <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition duration-300">
                         <p className="text-white text-center mb-2">Your product information</p>
-                        <button className='bg-[#0077b6] text-white p-2 rounded hover:bg-[#83d0f9] hover:text-black'>Know More</button>
+                        <Link to='/about-us'><button className='bg-[#0077b6] text-white p-2 rounded hover:bg-[#83d0f9] hover:text-black'>Know More</button></Link>
                     </div>
                 </div>
                 <div className="relative mt-8 md:w-[30%] w-full">
@@ -113,7 +120,7 @@ const Home = () => {
                     />
                     <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition duration-300">
                         <p className="text-white text-center mb-2">Your product information</p>
-                        <button className='bg-[#0077b6] text-white p-2 rounded hover:bg-[#83d0f9] hover:text-black'>Know More</button>
+                        <Link to='/about-us'><button className='bg-[#0077b6] text-white p-2 rounded hover:bg-[#83d0f9] hover:text-black'>Know More</button></Link>
                     </div>
                 </div>
                 <div className="relative mt-8 md:w-[30%] w-full">
@@ -124,29 +131,73 @@ const Home = () => {
                     />
                     <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition duration-300">
                         <p className="text-white text-center mb-2">Your product information</p>
-                        <button className='bg-[#0077b6] text-white p-2 rounded hover:bg-[#83d0f9] hover:text-black'>Know More</button>
+                        <Link to='/about-us'><button className='bg-[#0077b6] text-white p-2 rounded hover:bg-[#83d0f9] hover:text-black'>Know More</button></Link>
                     </div>
                 </div>
                 <div className="relative mt-8 md:w-[30%] w-full">
                     <img
-                        src={image3}
+                        src={image4}
                         alt="Product"
                         className="w-full h-auto max-h-80 md:h-full object-cover transition duration-300 hover:brightness-90"
                     />
                     <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition duration-300">
                         <p className="text-white text-center mb-2">Your product information</p>
-                        <button className='bg-[#0077b6] text-white p-2 rounded hover:bg-[#83d0f9] hover:text-black'>Know More</button>
+                        <Link to='/about-us'><button className='bg-[#0077b6] text-white p-2 rounded hover:bg-[#83d0f9] hover:text-black'>Know More</button></Link>
                     </div>
                 </div>
                 <div className="relative mt-8 md:w-[30%] w-full">
                     <img
-                        src={image3}
+                        src={image5}
                         alt="Product"
                         className="w-full h-auto max-h-80 md:h-full object-cover transition duration-300 hover:brightness-90"
                     />
                     <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition duration-300">
                         <p className="text-white text-center mb-2">Your product information</p>
-                        <button className='bg-[#0077b6] text-white p-2 rounded hover:bg-[#83d0f9] hover:text-black'>Know More</button>
+                        <Link to='/about-us'><button className='bg-[#0077b6] text-white p-2 rounded hover:bg-[#83d0f9] hover:text-black'>Know More</button></Link>
+                    </div>
+                </div>
+                <div className="relative mt-8 md:w-[30%] w-full">
+                    <img
+                        src={image6}
+                        alt="Product"
+                        className="w-full h-auto max-h-80 md:h-full object-cover transition duration-300 hover:brightness-90"
+                    />
+                    <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition duration-300">
+                        <p className="text-white text-center mb-2">Your product information</p>
+                        <Link to='/about-us'><button className='bg-[#0077b6] text-white p-2 rounded hover:bg-[#83d0f9] hover:text-black'>Know More</button></Link>
+                    </div>
+                </div>
+                <div className="relative mt-8 md:w-[30%] w-full">
+                    <img
+                        src={image7}
+                        alt="Product"
+                        className="w-full h-auto max-h-80 md:h-full object-cover transition duration-300 hover:brightness-90"
+                    />
+                    <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition duration-300">
+                        <p className="text-white text-center mb-2">Your product information</p>
+                        <Link to='/about-us'><button className='bg-[#0077b6] text-white p-2 rounded hover:bg-[#83d0f9] hover:text-black'>Know More</button></Link>
+                    </div>
+                </div>
+                <div className="relative mt-8 md:w-[30%] w-full">
+                    <img
+                        src={image8}
+                        alt="Product"
+                        className="w-full h-auto max-h-80 md:h-full object-cover transition duration-300 hover:brightness-90"
+                    />
+                    <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition duration-300">
+                        <p className="text-white text-center mb-2">Your product information</p>
+                        <Link to='/about-us'><button className='bg-[#0077b6] text-white p-2 rounded hover:bg-[#83d0f9] hover:text-black'>Know More</button></Link>
+                    </div>
+                </div>
+                <div className="relative mt-8 md:w-[30%] w-full">
+                    <img
+                        src={image9}
+                        alt="Product"
+                        className="w-full h-auto max-h-80 md:h-full object-cover transition duration-300 hover:brightness-90"
+                    />
+                    <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition duration-300">
+                        <p className="text-white text-center mb-2">Your product information</p>
+                        <Link to='/about-us'><button className='bg-[#0077b6] text-white p-2 rounded hover:bg-[#83d0f9] hover:text-black'>Know More</button></Link>
                     </div>
                 </div>
                 {/* Repeat this block for additional images */}

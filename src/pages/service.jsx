@@ -5,7 +5,7 @@ import Testing from '../images/Support.png'
 
 const Service = () => {
   return (
-    <div className='mt-32 mx-20'>
+    <div className='mt-32 md:mx-20'>
         <h3 className="text-5xl font-serif text-center  text-[#0077b6] md:px-8">Services</h3>
         <div class="py-10">  
             <div class="container m-auto px-6 text-gray-500 md:px-12 xl:px-0">

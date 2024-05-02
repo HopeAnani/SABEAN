@@ -12,6 +12,10 @@ function Navbar() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   const toggleProductsMenu = () => {
     setIsProductsMenuOpen(!isProductsMenuOpen);
   };
@@ -40,27 +44,27 @@ function Navbar() {
 
         {/* Upper list */}
         <ul className="md:flex md:space-x-8 md:items-center md:w-auto hidden">
-          <li><a href="/" className="flex items-center text-[#0077b6] hover:text-[#14152d]"><AiOutlineHome className="mr-1" /> Home</a></li>
-          <li><a href="/about-us" className="flex items-center text-[#0077b6] hover:text-[#14152d]"><AiOutlineInfoCircle className="mr-1" /> About Us</a></li>
+          <li><Link to="/" onClick={closeMenu} className="flex items-center text-[#0077b6] hover:text-[#14152d]"><AiOutlineHome className="mr-1" /> Home</Link></li>
+          <li><Link to="/about-us" onClick={closeMenu} className="flex items-center text-[#0077b6] hover:text-[#14152d]"><AiOutlineInfoCircle className="mr-1" /> About Us</Link></li>
           {/* Products dropdown */}
           <li className="relative" onClick={toggleProductsMenu}>
-            <a href="#" className="flex items-center text-[#0077b6] hover:text-[#14152d]">
+            <div className="flex items-center text-[#0077b6] hover:text-[#14152d] cursor-pointer">
               <AiOutlineShopping className="mr-1" /> Products
-            </a>
+            </div>
             <motion.ul 
               className={`absolute left-0 top-full bg-white shadow-md py-2 px-4 mt-2 w-64 rounded-md ${isProductsMenuOpen ? 'block' : 'hidden'}`}
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3 }}
             >
-              <li className='my-4 hover:text-[#0077b6]'><Link to="/products/multijet-water-meters">MultiJet water meters</Link></li>
-              <li className='my-4 hover:text-[#0077b6]'><Link to="/products/gate-valve">Gate Valve</Link></li>
+              <li className='my-4 hover:text-[#0077b6]'><Link to="/products/multijet-water-meters" onClick={closeMenu}>MultiJet water meters</Link></li>
+              <li className='my-4 hover:text-[#0077b6]'><Link to="/products/gate-valve" onClick={closeMenu}>Gate Valve</Link></li>
               
               {/* Add more categories as needed */}
             </motion.ul>
           </li>
-          <li><a href="/services" className="flex items-center text-[#0077b6] hover:text-[#14152d]"><AiOutlineSolution className="mr-1" /> Services</a></li>
-          <li><a href="/contact-us" className="flex items-center text-[#0077b6] hover:text-[#14152d]"><AiOutlineMail className="mr-1" /> Contact Us</a></li>
+          <li><Link to="/services" onClick={closeMenu} className="flex items-center text-[#0077b6] hover:text-[#14152d]"><AiOutlineSolution className="mr-1" /> Services</Link></li>
+          <li><Link to="/contact-us" onClick={closeMenu} className="flex items-center text-[#0077b6] hover:text-[#14152d]"><AiOutlineMail className="mr-1" /> Contact Us</Link></li>
         </ul>
 
         {/* Responsive menu */}
@@ -71,27 +75,27 @@ function Navbar() {
           transition={{ duration: 0.3 }}
         >
           <ul className="space-y-4">
-            <li><a href="/" className="flex gap-2 items-center text-[#0077b6] hover:text-[#14152d]"><AiOutlineHome className="mr-1" /> Home</a></li>
-            <li><a href="/about-us" className="flex gap-2 items-center  text-[#0077b6] hover:text-[#14152d]"><AiOutlineInfoCircle className="mr-1" /> About Us</a></li>
+            <li><Link to="/" onClick={closeMenu} className="flex gap-2 items-center text-[#0077b6] hover:text-[#14152d]"><AiOutlineHome className="mr-1" /> Home</Link></li>
+            <li><Link to="/about-us" onClick={closeMenu} className="flex gap-2 items-center  text-[#0077b6] hover:text-[#14152d]"><AiOutlineInfoCircle className="mr-1" /> About Us</Link></li>
             {/* Responsive Products dropdown */}
             <li className="relative" onClick={toggleProductsMenu}>
-              <a href="#" className="flex gap-2 items-center text-[#0077b6] hover:text-[#14152d]">
+              <div className="flex gap-2 items-center text-[#0077b6] hover:text-[#14152d]">
                 <AiOutlineShopping className="mr-1" /> Products
-              </a>
+              </div>
               <motion.ul 
                 className={`absolute left-0 top-full bg-white shadow-md py-2 px-4 mt-2 w-64 rounded-md ${isProductsMenuOpen ? 'block' : 'hidden'}`}
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3 }}
               >
-                <li className='my-4 hover:text-[#0077b6]'><Link to="/products/multijet-water-meters">MultiJet water meters</Link></li>
-                <li className='my-4 hover:text-[#0077b6]'><Link to="/products/gate-valve">Gate Valve</Link></li>
+                <li className='my-4 hover:text-[#0077b6]'><Link to="/products/multijet-water-meters" onClick={closeMenu}>MultiJet water meters</Link></li>
+                <li className='my-4 hover:text-[#0077b6]'><Link to="/products/gate-valve" onClick={closeMenu}>Gate Valve</Link></li>
                 
                 {/* Add more categories as needed */}
               </motion.ul>
             </li>
-            <li><a href="/services" className="flex gap-2 items-center text-[#0077b6] hover:text-[#14152d]"><AiOutlineSolution className="mr-1" /> Services</a></li>
-            <li><a href="/contact-us" className="flex gap-2 items-center text-[#0077b6] hover:text-[#14152d]"><AiOutlineMail className="mr-1" /> Contact Us</a></li>
+            <li><Link to="/services" onClick={closeMenu} className="flex gap-2 items-center text-[#0077b6] hover:text-[#14152d]"><AiOutlineSolution className="mr-1" /> Services</Link></li>
+            <li><Link to="/contact-us" onClick={closeMenu} className="flex gap-2 items-center text-[#0077b6] hover:text-[#14152d]"><AiOutlineMail className="mr-1" /> Contact Us</Link></li>
           </ul>
         </motion.div>
       </div>
