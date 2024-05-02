@@ -48,16 +48,14 @@ function Navbar() {
               <AiOutlineShopping className="mr-1" /> Products
             </a>
             <motion.ul 
-              className={`absolute left-0 top-full bg-white shadow-md py-2 px-4 mt-2 w-40 rounded-md ${isProductsMenuOpen ? 'block' : 'hidden'}`}
+              className={`absolute left-0 top-full bg-white shadow-md py-2 px-4 mt-2 w-64 rounded-md ${isProductsMenuOpen ? 'block' : 'hidden'}`}
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3 }}
             >
-              <li className='my-4 hover:text-[#0077b6]'><a href="/products/category1">Category 1</a></li>
-              <li className='my-4 hover:text-[#0077b6]'><a href="/products/category1">Category 1</a></li>
-              <li className='my-4 hover:text-[#0077b6]'><a href="/products/category1">Category 1</a></li>
-              <li className='my-4 hover:text-[#0077b6]'><a href="/products/category1">Category 1</a></li>
-              <li className='my-4 hover:text-[#0077b6]'><a href="/products/category1">Category 1</a></li>
+              <li className='my-4 hover:text-[#0077b6]'><Link to="/products/multijet-water-meters">MultiJet water meters</Link></li>
+              <li className='my-4 hover:text-[#0077b6]'><Link to="/products/gate-valve">Gate Valve</Link></li>
+              
               {/* Add more categories as needed */}
             </motion.ul>
           </li>
@@ -81,16 +79,14 @@ function Navbar() {
                 <AiOutlineShopping className="mr-1" /> Products
               </a>
               <motion.ul 
-                className={`absolute left-0 top-full bg-white shadow-md py-2 px-4 mt-2 w-40 rounded-md ${isProductsMenuOpen ? 'block' : 'hidden'}`}
+                className={`absolute left-0 top-full bg-white shadow-md py-2 px-4 mt-2 w-64 rounded-md ${isProductsMenuOpen ? 'block' : 'hidden'}`}
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3 }}
               >
-                <li className='my-4 hover:text-[#0077b6]'><a href="/products/category1">Category 1</a></li>
-                <li className='my-4 hover:text-[#0077b6]'><a href="/products/category1">Category 1</a></li>
-                <li className='my-4 hover:text-[#0077b6]'><a href="/products/category1">Category 1</a></li>
-                <li className='my-4 hover:text-[#0077b6]'><a href="/products/category1">Category 1</a></li>
-                <li className='my-4 hover:text-[#0077b6]'><a href="/products/category1">Category 1</a></li>
+                <li className='my-4 hover:text-[#0077b6]'><Link to="/products/multijet-water-meters">MultiJet water meters</Link></li>
+                <li className='my-4 hover:text-[#0077b6]'><Link to="/products/gate-valve">Gate Valve</Link></li>
+                
                 {/* Add more categories as needed */}
               </motion.ul>
             </li>
