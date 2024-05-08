@@ -1,5 +1,4 @@
 import React from 'react'
-import img from '../images/ceo.png'
 
 const about = () => {
   return (

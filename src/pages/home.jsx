@@ -2,7 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import drop from '../images/pngwing.com (5) (1).png';
-import logo from '../images/logo.png'
 import image1 from '../images/Sabean/Sabeanby_AronSimeneh-2124.jpg'
 import image2 from '../images/Sabean/Sabeanby_AronSimeneh-2343.jpg'
 import image3 from '../images/Sabean/Sabeanby_AronSimeneh-2946.jpg'
