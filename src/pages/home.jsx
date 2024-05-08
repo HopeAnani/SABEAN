@@ -1,13 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import drop from '../images/pngwing.com (5).png';
+import drop from '../images/pngwing.com (5) (1).png';
 import logo from '../images/logo.png'
 import image1 from '../images/Sabean/Sabeanby_AronSimeneh-2124.jpg'
 import image2 from '../images/Sabean/Sabeanby_AronSimeneh-2343.jpg'
 import image3 from '../images/Sabean/Sabeanby_AronSimeneh-2946.jpg'
 import image4 from '../images/Sabean/Sabeanby_AronSimeneh-2608.jpg'
-import image5 from '../images/Sabean/Sabeanby_AronSimeneh-2377.jpg'
+import image5 from '../images/Sabean/Sabeanby_AronSimeneh-2551.jpg'
 import image6 from '../images/Sabean/Sabeanby_AronSimeneh-2377.jpg'
 import image7 from '../images/Sabean/Sabeanby_AronSimeneh-3211.jpg'
 import image8 from '../images/Sabean/Sabeanby_AronSimeneh-3316.jpg'
@@ -26,8 +26,8 @@ const Home = () => {
           transition={{ duration: 2.3, ease: "easeInOut" }}
         >
           <div className='flex flex-col justify-center items-center'>
-            <img src={logo} alt=""  className='h-46'/>
-            <h1 className="font-serif text-3xl md:text-5xl text-center font-bold">We value Every Drop of Water!</h1>
+            {/* <img src={logo} alt=""  className='h-46'/> */}
+            <h1 className="font-serif text-3xl md:text-5xl text-center font-bold">We Value Every Droplet of Water!</h1>
             <p className='font-serif text-lg text-[#333333] md:text-center text-justify mt-6 md:px-8'>Welcome to SABEAN, Ethiopia's sole manufacturer of high-quality multi jet water meters. We are committed to providing innovative solutions for efficient water management and sustainability. Discover how our products are contributing to a water-secure future.</p>
           </div>
         </motion.div>
@@ -108,7 +108,7 @@ const Home = () => {
                         className="w-full h-auto max-h-80 md:h-full object-cover transition duration-300 hover:brightness-90"
                     />
                     <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition duration-300">
-                        <p className="text-white text-center mb-2">Your product information</p>
+                        {/* <p className="text-white text-center mb-2">Your product information</p> */}
                         <Link to='/about-us'><button className='bg-[#0077b6] text-white p-2 rounded hover:bg-[#83d0f9] hover:text-black'>Know More</button></Link>
                     </div>
                 </div>
@@ -119,7 +119,7 @@ const Home = () => {
                         className="w-full h-auto max-h-80 md:h-full object-cover transition duration-300 hover:brightness-90"
                     />
                     <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition duration-300">
-                        <p className="text-white text-center mb-2">Your product information</p>
+                        {/* <p className="text-white text-center mb-2">Your product information</p> */}
                         <Link to='/about-us'><button className='bg-[#0077b6] text-white p-2 rounded hover:bg-[#83d0f9] hover:text-black'>Know More</button></Link>
                     </div>
                 </div>
@@ -130,7 +130,7 @@ const Home = () => {
                         className="w-full h-auto max-h-80 md:h-full object-cover transition duration-300 hover:brightness-90"
                     />
                     <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition duration-300">
-                        <p className="text-white text-center mb-2">Your product information</p>
+                        {/* <p className="text-white text-center mb-2">Your product information</p> */}
                         <Link to='/about-us'><button className='bg-[#0077b6] text-white p-2 rounded hover:bg-[#83d0f9] hover:text-black'>Know More</button></Link>
                     </div>
                 </div>
@@ -141,7 +141,7 @@ const Home = () => {
                         className="w-full h-auto max-h-80 md:h-full object-cover transition duration-300 hover:brightness-90"
                     />
                     <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition duration-300">
-                        <p className="text-white text-center mb-2">Your product information</p>
+                        {/* <p className="text-white text-center mb-2">Your product information</p> */}
                         <Link to='/about-us'><button className='bg-[#0077b6] text-white p-2 rounded hover:bg-[#83d0f9] hover:text-black'>Know More</button></Link>
                     </div>
                 </div>
@@ -152,7 +152,7 @@ const Home = () => {
                         className="w-full h-auto max-h-80 md:h-full object-cover transition duration-300 hover:brightness-90"
                     />
                     <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition duration-300">
-                        <p className="text-white text-center mb-2">Your product information</p>
+                        {/* <p className="text-white text-center mb-2">Your product information</p> */}
                         <Link to='/about-us'><button className='bg-[#0077b6] text-white p-2 rounded hover:bg-[#83d0f9] hover:text-black'>Know More</button></Link>
                     </div>
                 </div>
@@ -163,7 +163,7 @@ const Home = () => {
                         className="w-full h-auto max-h-80 md:h-full object-cover transition duration-300 hover:brightness-90"
                     />
                     <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition duration-300">
-                        <p className="text-white text-center mb-2">Your product information</p>
+                        {/* <p className="text-white text-center mb-2">Your product information</p> */}
                         <Link to='/about-us'><button className='bg-[#0077b6] text-white p-2 rounded hover:bg-[#83d0f9] hover:text-black'>Know More</button></Link>
                     </div>
                 </div>
@@ -174,7 +174,7 @@ const Home = () => {
                         className="w-full h-auto max-h-80 md:h-full object-cover transition duration-300 hover:brightness-90"
                     />
                     <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition duration-300">
-                        <p className="text-white text-center mb-2">Your product information</p>
+                        {/* <p className="text-white text-center mb-2">Your product information</p> */}
                         <Link to='/about-us'><button className='bg-[#0077b6] text-white p-2 rounded hover:bg-[#83d0f9] hover:text-black'>Know More</button></Link>
                     </div>
                 </div>
@@ -185,7 +185,7 @@ const Home = () => {
                         className="w-full h-auto max-h-80 md:h-full object-cover transition duration-300 hover:brightness-90"
                     />
                     <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition duration-300">
-                        <p className="text-white text-center mb-2">Your product information</p>
+                        {/* <p className="text-white text-center mb-2">Your product information</p> */}
                         <Link to='/about-us'><button className='bg-[#0077b6] text-white p-2 rounded hover:bg-[#83d0f9] hover:text-black'>Know More</button></Link>
                     </div>
                 </div>
@@ -196,7 +196,7 @@ const Home = () => {
                         className="w-full h-auto max-h-80 md:h-full object-cover transition duration-300 hover:brightness-90"
                     />
                     <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition duration-300">
-                        <p className="text-white text-center mb-2">Your product information</p>
+                        {/* <p className="text-white text-center mb-2">Your product information</p> */}
                         <Link to='/about-us'><button className='bg-[#0077b6] text-white p-2 rounded hover:bg-[#83d0f9] hover:text-black'>Know More</button></Link>
                     </div>
                 </div>

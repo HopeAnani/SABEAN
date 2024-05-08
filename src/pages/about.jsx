@@ -14,20 +14,20 @@ const about = () => {
             <div className=''>
                 <h3 className="text-5xl  text-[#0077b6] md:px-8">Company Overview</h3>
                 <p className='font-serif text-lg text-[#333333]  text-justify my-6 md:px-8'>SABEAN Base Metal Engineering Plc was founded in 2016, focusing on the production of Multijet water meters. Our journey from a small startup to a leader in Ethiopia's water sector reflects our commitment to quality, innovation, and sustainability.</p>   
-                <p className='font-serif text-lg text-[#333333]  text-justify my-6 md:px-8'>SABEAN Base Metal Engineering Plc was founded in 2016, focusing on the production of Multijet water meters. Our journey from a small startup to a leader in Ethiopia's water sector reflects our commitment to quality, innovation, and sustainability.</p>   
+                {/* <p className='font-serif text-lg text-[#333333]  text-justify my-6 md:px-8'>SABEAN Base Metal Engineering Plc was founded in 2016, focusing on the production of Multijet water meters. Our journey from a small startup to a leader in Ethiopia's water sector reflects our commitment to quality, innovation, and sustainability.</p>    */}
             </div>
             <div>
                 <h3 className="text-5xl  text-[#0077b6] md:px-8">Mission & Values</h3>
                 <p className='font-serif text-lg text-[#333333]  text-justify my-6 md:px-8'>Our mission is to deliver high-quality water meters that support efficient water management and water conservation in Ethiopia. We value innovation, sustainability, and community impact.</p>   
-                <p className='font-serif text-lg text-[#333333]  text-justify my-6 md:px-8'>Our mission is to deliver high-quality water meters that support efficient water management and water conservation in Ethiopia. We value innovation, sustainability, and community impact.</p>   
+                {/* <p className='font-serif text-lg text-[#333333]  text-justify my-6 md:px-8'>Our mission is to deliver high-quality water meters that support efficient water management and water conservation in Ethiopia. We value innovation, sustainability, and community impact.</p>    */}
             </div>
             <div>
                 <h3 className="text-5xl  text-[#0077b6] md:px-8">Our Achievements</h3>
-                <p className='font-serif text-lg text-[#333333] text-justify my-6 md:px-8'>Since our establishment, SABEAN has produced over 100,000 water meters and aims to double its production capacity to meet the growing demand. We supply Ethiopian water supply authorities and are expanding into the Horn of Africa region.</p>   
-                <p className='font-serif text-lg text-[#333333] text-justify my-6 md:px-8'>Since our establishment, SABEAN has produced over 100,000 water meters and aims to double its production capacity to meet the growing demand. We supply Ethiopian water supply authorities and are expanding into the Horn of Africa region.</p>   
+                <p className='font-serif text-lg text-[#333333] text-justify my-6 md:px-8'>Since our establishment, SABEAN has produced over 200,000 water meters and aims to double its production capacity to meet the growing demand. We supply Ethiopian water supply authorities and are expanding into the Horn of Africa region.</p>   
+                {/* <p className='font-serif text-lg text-[#333333] text-justify my-6 md:px-8'>Since our establishment, SABEAN has produced over 100,000 water meters and aims to double its production capacity to meet the growing demand. We supply Ethiopian water supply authorities and are expanding into the Horn of Africa region.</p>    */}
             </div>
             <div className='flex flex-wrap'>
-                <div className='md:w-2/3'>
+                <div className=''>
                     <h3 className="text-5xl  text-[#0077b6] md:px-8">Message from the CEO</h3>
                     <p className='font-serif text-lg text-[#333333] text-justify my-6 md:px-8'>As one of the founders and CEO of Sabean Base Metal Engineering, I am delighted to share our vision for a water-secure future in Ethiopia and beyond. </p>
                     <p className='font-serif text-lg text-[#333333] text-justify my-6 md:px-8'>Our journey began with a commitment to address Ethiopia's unique water management challenges through domestic water meter manufacturing. By sourcing 80% of our raw materials locally, and manufacturing major components of the meter in our factory, we successfully reduced reliance on substandard imported water meters.  Ethiopia has always been relying on imported water meters and has often proved costly, unsustainable and unreliable</p>
@@ -36,11 +36,11 @@ const about = () => {
                     <p className='font-serif text-lg text-[#333333] text-justify my-6 md:px-8'>Our impact extends beyond Ethiopia, contributing to regional and global water security. We recognize that effective water management requires collaboration, and we are open to partnerships that align with our mission. Whether through transfer of technology, creation of job opportunities, import substitution, or environmental stewardship, we are eager to work with like-minded organizations and individuals to make a difference. </p>
                     <p className='font-serif text-lg text-[#333333] text-justify my-6 md:px-8'>Together, we can create a sustainable, water-secure future. I invite you to join us on this journey as we continue to innovate, inspire, and impact lives.</p>
                     <p className='font-serif text-lg text-[#0077b6] text-justify my-6 md:px-8'>We Value Every Droplet of Water!</p>
-                    <p className='font-serif text-lg text-[#0077b6] text-justify my-6 md:px-8'>Ainishet (Ph.D.) CEO, Sabean Base Metal Engineering PLC Addis Ababa, Ethiopia</p>
+                    <p className='font-serif text-lg text-[#0077b6] text-justify my-6 md:px-8'>Ainishet Asres (Ph.D.) CEO, Sabean Base Metal Engineering PLC Addis Ababa, Ethiopia</p>
                 </div>
-                <div className="mx-auto bg-gradient-to-b  from-[#0077b6] rounded-md relative overflow-hidden md:mt-20 sm:mt-0 md:h-96 md:w-96">
+                {/* <div className="mx-auto bg-gradient-to-b  from-[#0077b6] rounded-md relative overflow-hidden md:mt-20 sm:mt-0 md:h-96 md:w-96">
                     <img src={img}  objectFit="cover" style={{ marginTop: '30px' }} />
-                </div>
+                </div> */}
             </div>
         </section>
     </div>

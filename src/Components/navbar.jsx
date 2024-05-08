@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { AiOutlineHome, AiOutlineInfoCircle, AiOutlineShopping, AiOutlineSolution, AiOutlineMail } from 'react-icons/ai';
-import image from "../images/SABEAN.png";
+import image from "../images/logo.png";
 import { Link } from 'react-router-dom';
 
 function Navbar() {
@@ -25,8 +25,9 @@ function Navbar() {
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center"> 
-          <Link to="/home"> </Link>
-          <img src={image} className="w-40 h-20 object-cover mr-4"/> 
+          <Link to="/"> 
+          <img src={image} className="w-auto h-20 object-cover mr-4"/> 
+          </Link>
         </div>
 
         {/* Menu button */}

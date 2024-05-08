@@ -1,7 +1,7 @@
 import React from 'react'
 import Installation from '../images/Maintainace.png'
 import Support from '../images/Support.png'
-import Testing from '../images/Support.png'
+import Testing from '../images/Testing.png'
 
 const Service = () => {
   return (
