@@ -1,6 +1,5 @@
 import React from 'react'
-import dn15 from '../images/Gate-valve.png';
-import gate from '../images/gate.png'
+import dn15 from '../images/product.jpg';
 
 const product2 = () => {
   return (
@@ -23,6 +22,10 @@ const product2 = () => {
                 src={dn15}
                 alt="Product Image"
               />
+              {/* <div className='flex m-4 md:gap-10 gap-4 items-center mt-4'>
+                <img src={img} className='md:w-52 w-36  rounded-sm shadow-lg border border-[#0077b6] hover:scale-125'/>
+                <img src={img2} className=' md:w-52 w-36 rounded-sm shadow-lg border border-[#0077b6] hover:scale-125'/>
+              </div> */}
             </div>
             <div className="mt-12 lg:mt-0">
               <h3 className="text-2xl font-extrabold  font-serif tracking-tight text-[#0077b6] sm:text-3xl">Product</h3>
@@ -33,9 +36,9 @@ const product2 = () => {
                     Gate valves are characterized by a “gate” that closes in a plane perpendicular to the flow of fluid. They are used primarily for on/off, nonthrottling service. Shearing of high-velocity flow will cause a partially open disk to vibrate and chatter, which will damage the seating surfaces and prevent a tight seal. They are suitable for most fluids including steam, water, oil, air, and gas. Gate valves may have either a solid or flexible wedge disk. In addition to on/off service, gate valves can be used for regulating flow, usually in sizes 6 in. and larger, but will chatter unless the disk is fully guided throughout travel.
                     </dd>
                   </div>
-                  <div>
+                  {/* <div>
                     <img src={gate}></img>
-                  </div>
+                  </div> */}
                 </dl>
               </div>
             </div>

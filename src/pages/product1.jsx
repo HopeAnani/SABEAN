@@ -1,7 +1,9 @@
 import React from 'react';
-import dn15 from '../images/DN15.png';
+import dn15 from '../images/product2.jpg';
 import dimension from '../images/DN15 (2).png'
-import error from '../images/error.jpg'
+import error from '../images/error.png'
+import img from '../images/product3.jpg'
+import img2 from '../images/product4.jpg'
 
 const product1 = () => {
   const data = [
@@ -35,19 +37,23 @@ const product1 = () => {
           <p className="mt-2 text-3xl leading-8 font-serif font-extrabold tracking-tight text-[#0077b6] sm:text-4xl">
             MultiJet water meters
           </p>
-          <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+          <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto max-sm:text-justify">
             Our Multi-jet water meters are meticulously engineered using carefully selected raw materials. This ensures not only their durability but also guarantees stable performance without any waste. These meters are designed to provide accurate measurements, making them a reliable choice for your water metering needs.
           </p>
         </div>
 
         <div className="mt-10">
           <div className="grid grid-cols-1 gap-y-16 gap-x-6 lg:grid-cols-2 lg:gap-x-8">
-            <div className="flex items-center justify-center">
+            <div className=" grid grid-cols-1 items-center justify-center">
               <img
                 className="max-w-xs rounded-lg shadow-lg lg:max-w-lg"
                 src={dn15}
                 alt="Product Image"
               />
+              <div className='flex m-4 md:gap-10 gap-4 items-center mt-4'>
+                <img src={img} className='md:w-52 w-36  rounded-sm shadow-lg border border-[#0077b6] hover:scale-125'/>
+                <img src={img2} className=' md:w-52 w-36 rounded-sm shadow-lg border border-[#0077b6] hover:scale-125'/>
+              </div>
             </div>
             <div className="mt-12 lg:mt-0">
               <h3 className="text-2xl font-extrabold  font-serif tracking-tight text-[#0077b6] sm:text-3xl">Product Features</h3>
@@ -66,11 +72,10 @@ const product1 = () => {
                       <li className='mb-1'>3.	<span className=' font-semibold'>IP68 Dry Type Counter: </span> The counter is of the IP68 standard, indicating it is dust-tight and protected against continuous immersion in water. It is vacuum-packed to ensure its integrity and functionality are maintained in various conditions.</li>
                       <li className='mb-1'>4.	<span className=' font-semibold'>Couplers Included:</span> The meter comes with couplers, providing a secure and efficient connection to your water supply system.</li>
                       <li className='mb-1'>5.	<span className=' font-semibold'>Anti-interference:</span> The meter incorporates Magnetic Protection to safeguard against external influences that could affect its operation.</li>
-                      <li className='mb-1'>6.	<span className=' font-semibold'>Direct Reading:</span> The indicator register features 5 Rollers (6 Rollers for Dn40/Dn50) and 4 Pointers, facilitating direct and easy reading of water usage.</li>
+                      <li className='mb-1'>6.	<span className=' font-semibold'>Direct Reading:</span> The indicator register features 5 Rollers and 4 Pointers, facilitating direct and easy reading of water usage.</li>
                       <li className='mb-1'>7.	<span className=' font-semibold'>Extra Inlet Filter:</span> An additional inlet filter is included to protect the water meter from any potential damage caused by grit and particulates.</li>
                       <li className='mb-1'>8.	<span className=' font-semibold'>Non-Return Valve:</span> A non-return valve is incorporated to prevent reverse flow, ensuring accurate readings. This feature is optional and can be included as per your requirements.</li>
-                      <li className='mb-1'>9.	<span className=' font-semibold'>IP68 Standard: </span>The meter meets the IP68 standard, signifying its high level of protection against dust and water ingress.</li>
-                      <li className='mb-1'>10.	<span className=' font-semibold'>High Pressure Resistance:</span> The meter can withstand static pressure up to 25 bar, making it suitable for high-pressure water supply systems.</li>
+                      <li className='mb-1'>9.	<span className=' font-semibold'>High Pressure Resistance:</span> The meter can withstand static pressure up to 25 bar, making it suitable for high-pressure water supply systems.</li>
                     </ul>
                     </dd>
                   </div>

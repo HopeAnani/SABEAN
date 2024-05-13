@@ -13,7 +13,7 @@ const Service = () => {
                     <div class="bg-white rounded-2xl shadow-xl px-8 py-12 sm:px-12 lg:px-8 border border-[#0077b6] hover:scale-105">
                         <div class="mb-12 space-y-4">
                             <h3 class="text-2xl font-semibold text-[#0077b6]">Installation & Maintenance</h3>
-                            <p class="mb-6 text-justify">We offer professional installation and maintenance services to ensure the optimal performance of our water meters.</p>
+                            <p class="mb-6 text-justify">We offer professional installation and maintenance services to ensure the optimal performance of our water meters with a 5 year warranty.</p>
                         </div>
                         <img src={Installation} class="w-2/3 ml-auto -mb-12" alt="illustration" loading="lazy" width="900" height="600"/>
                     </div>

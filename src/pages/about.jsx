@@ -1,32 +1,49 @@
 import React from 'react'
+import img from '../images/Sabean/sabean about 2.jpg'
+import img2 from '../images/Sabean/sabean about.jpg'
 
 const about = () => {
   return (
     <div className='mt-32 min-h-screen'>
         <section className="font-serif justify-center items-center md:mx-12 mx-4 pt-4">
            
-            <div className=''>
-                <h3 className="text-5xl  text-[#0077b6] text-center">Welcome To Sabean!</h3>
-                <p className='font-serif text-lg text-[#333333]  text-justify my-6 md:px-8'>Today, Sabean draws inspiration from this legacy. We recognize the enduring value of traditional techniques and indigenous materials, while fostering innovation to ensure continued relevance in the modern world. Our company embodies the enduring spirit of Ethiopian creativity, ensuring that this remarkable heritage thrives for generations to come.</p>   
-                <p className='font-serif text-lg text-[#333333]  text-justify my-6 md:px-8'>Sabean extends beyond the role of a water meter manufacturer; it serves as a pathway towards a future with secure water resources. It acknowledges that the absence of accurate, reliable, and durable water meters contributes to the substantial volume of non-revenue water that Ethiopia loses. These meters are not just measuring devices, but also payment gateways that can help address this issue. And increase revenue of Ethiopia from it’s precious resource, Water. </p>           
+            <div className='mb-4 '>
+                <h3 className="text-5xl md:px-8  text-[#0077b6]">Welcome To Sabean!</h3>
+                <div className='flex flex-wrap'>
+                    
+                    <div className='w-full md:w-2/3'>
+                    <p className='font-serif text-lg text-[#333333]  text-justify my-6 md:px-8'>Today, Sabean draws inspiration from this legacy. We recognize the enduring value of traditional techniques and indigenous materials, while fostering innovation to ensure continued relevance in the modern world. Our company embodies the enduring spirit of Ethiopian creativity, ensuring that this remarkable heritage thrives for generations to come.</p>   
+                    <p className='font-serif text-lg text-[#333333]  text-justify my-6 md:px-8'>Sabean extends beyond the role of a water meter manufacturer; it serves as a pathway towards a future with secure water resources. It acknowledges that the absence of accurate, reliable, and durable water meters contributes to the substantial volume of non-revenue water that Ethiopia loses. These meters are not just measuring devices, but also payment gateways that can help address this issue. And increase revenue of Ethiopia from it’s precious resource, Water. </p>     
+                    <div className=''>
+                        <h3 className="text-5xl  text-[#0077b6] md:px-8">Company Overview</h3>
+                        <p className='font-serif text-lg text-[#333333]  text-justify my-6 md:px-8'>SABEAN Base Metal Engineering Plc was founded in 2016, focusing on the production of Multijet water meters. Our journey from a small startup to a leader in Ethiopia's water sector reflects our commitment to quality, innovation, and sustainability.</p>   
+                        <div>
+                        <h3 className="text-5xl  text-[#0077b6] md:px-8">Mission & Values</h3>
+                        <p className='font-serif text-lg text-[#333333]  text-justify my-6 md:px-8'>Our mission is to deliver high-quality water meters that support efficient water management and water conservation in Ethiopia. We value innovation, sustainability, and community impact.</p>   
+                        {/* <p className='font-serif text-lg text-[#333333]  text-justify my-6 md:px-8'>Our mission is to deliver high-quality water meters that support efficient water management and water conservation in Ethiopia. We value innovation, sustainability, and community impact.</p>    */}
+                        </div>
+                {/* <p className='font-serif text-lg text-[#333333]  text-justify my-6 md:px-8'>SABEAN Base Metal Engineering Plc was founded in 2016, focusing on the production of Multijet water meters. Our journey from a small startup to a leader in Ethiopia's water sector reflects our commitment to quality, innovation, and sustainability.</p>    */}
+                    </div>      
+                    </div>
+                    <div className='w-full md:w-1/3 ' ><img src={img2} alt="" className='object-contain overflow-y-hidden' /></div>
+                </div>
             </div>
-            <div className=''>
+            {/* <div className=''>
                 <h3 className="text-5xl  text-[#0077b6] md:px-8">Company Overview</h3>
                 <p className='font-serif text-lg text-[#333333]  text-justify my-6 md:px-8'>SABEAN Base Metal Engineering Plc was founded in 2016, focusing on the production of Multijet water meters. Our journey from a small startup to a leader in Ethiopia's water sector reflects our commitment to quality, innovation, and sustainability.</p>   
-                {/* <p className='font-serif text-lg text-[#333333]  text-justify my-6 md:px-8'>SABEAN Base Metal Engineering Plc was founded in 2016, focusing on the production of Multijet water meters. Our journey from a small startup to a leader in Ethiopia's water sector reflects our commitment to quality, innovation, and sustainability.</p>    */}
-            </div>
-            <div>
+                
+            </div> */}
+            {/* <div>
                 <h3 className="text-5xl  text-[#0077b6] md:px-8">Mission & Values</h3>
                 <p className='font-serif text-lg text-[#333333]  text-justify my-6 md:px-8'>Our mission is to deliver high-quality water meters that support efficient water management and water conservation in Ethiopia. We value innovation, sustainability, and community impact.</p>   
-                {/* <p className='font-serif text-lg text-[#333333]  text-justify my-6 md:px-8'>Our mission is to deliver high-quality water meters that support efficient water management and water conservation in Ethiopia. We value innovation, sustainability, and community impact.</p>    */}
-            </div>
+            </div> */}
             <div>
                 <h3 className="text-5xl  text-[#0077b6] md:px-8">Our Achievements</h3>
                 <p className='font-serif text-lg text-[#333333] text-justify my-6 md:px-8'>Since our establishment, SABEAN has produced over 200,000 water meters and aims to double its production capacity to meet the growing demand. We supply Ethiopian water supply authorities and are expanding into the Horn of Africa region.</p>   
                 {/* <p className='font-serif text-lg text-[#333333] text-justify my-6 md:px-8'>Since our establishment, SABEAN has produced over 100,000 water meters and aims to double its production capacity to meet the growing demand. We supply Ethiopian water supply authorities and are expanding into the Horn of Africa region.</p>    */}
             </div>
             <div className='flex flex-wrap'>
-                <div className=''>
+                <div className='md:w-2/3'>
                     <h3 className="text-5xl  text-[#0077b6] md:px-8">Message from the CEO</h3>
                     <p className='font-serif text-lg text-[#333333] text-justify my-6 md:px-8'>As one of the founders and CEO of Sabean Base Metal Engineering, I am delighted to share our vision for a water-secure future in Ethiopia and beyond. </p>
                     <p className='font-serif text-lg text-[#333333] text-justify my-6 md:px-8'>Our journey began with a commitment to address Ethiopia's unique water management challenges through domestic water meter manufacturing. By sourcing 80% of our raw materials locally, and manufacturing major components of the meter in our factory, we successfully reduced reliance on substandard imported water meters.  Ethiopia has always been relying on imported water meters and has often proved costly, unsustainable and unreliable</p>
@@ -37,9 +54,9 @@ const about = () => {
                     <p className='font-serif text-lg text-[#0077b6] text-justify my-6 md:px-8'>We Value Every Droplet of Water!</p>
                     <p className='font-serif text-lg text-[#0077b6] text-justify my-6 md:px-8'>Ainishet Asres (Ph.D.) CEO, Sabean Base Metal Engineering PLC Addis Ababa, Ethiopia</p>
                 </div>
-                {/* <div className="mx-auto bg-gradient-to-b  from-[#0077b6] rounded-md relative overflow-hidden md:mt-20 sm:mt-0 md:h-96 md:w-96">
+                <div className="mx-auto  rounded-md relative overflow-hidden md:mt-20 sm:mt-0 md:w-96">
                     <img src={img}  objectFit="cover" style={{ marginTop: '30px' }} />
-                </div> */}
+                </div>
             </div>
         </section>
     </div>
